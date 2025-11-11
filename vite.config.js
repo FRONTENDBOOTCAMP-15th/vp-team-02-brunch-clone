@@ -1,12 +1,12 @@
-import { defineConfig } from "vite";
-import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   build: {
     rollupOptions: {
       input: {
         // 메인 페이지
-        index: "index.html",
+        index: 'index.html',
 
         // 사용자 관련
 
@@ -17,5 +17,5 @@ export default defineConfig({
     },
   },
   plugins: [tailwindcss()],
-  appType: "mpa", // fallback 사용안함
+  appType: 'mpa', // fallback 사용안함
 });
