@@ -19,3 +19,4 @@ npm install
 ```sh
 git pull origin main
 ```
+폴더생성
