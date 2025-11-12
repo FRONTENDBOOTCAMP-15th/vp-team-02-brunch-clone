@@ -1,0 +1,84 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  /* height: 80px; */
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.RightIcons {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* 여기서 아이콘 간 간격 조절 */
+}
+
+.MainLogo {
+  flex-grow: 1;
+  /*background-color: #ffc;*/
+}
+
+.MainLogo img {
+  height: 22px;
+  width: 120px;
+}
+
+/* 검색 아이콘 */
+.SearchIcon img {
+  height: 30px;
+  width: 30px;
+}
+
+/* 시작하기 버튼 */
+.Start {
+  flex-shrink: 0; /* 오른쪽 버튼은 줄어들지 않게 */
+}
+
+.StartBtn {
+  width: 62px;
+  height: 24px;
+  background-color: #231f20;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 10px; /* 버튼 높이에 맞게 살짝 줄임 */
+  cursor: pointer;
+  transition: background 0.2s ease;
+  align-items: center;
+  justify-content: center; /* 텍스트 중앙 정렬 */
+}
+
+.StartBtn:hover {
+}
+
+@media (max-width: 600px) {
+  .MainLogo {
+    flex: 0 0 120px; /* 너무 커지지 않게 */
+  }
+}
+
+.NotifyIcon {
+}
+.Avarta {
+}
+.avatarBtn {
+  /* background-color: transparent; */
+  padding: 0;
+  margin: 0 10px;
+  border: 0 none;
+  position: relative;
+  vertical-align: top;
+
+  --size: 30px;
+
+  width: var(--size);
+  height: var(--size);
+  /* aspect-ratio: 1/1; */
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../public/font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <link rel="stylesheet" href="../../styles/head-style.css" />
+  </head>
+  <body>
+    <!-- 탑바 -->
+    <div id="TopBar"></div>
+    <script>
+      (async () => {
+        try {
+          const res = await fetch('../../commons/top.html');
+          if (!res.ok) throw new Error(res.statusText);
+          document.getElementById('TopBar').innerHTML = await res.text();
+        } catch (e) {
+          console.error('탑바 로드 실패:', e);
+        }
+      })();
+    </script>
+  </body>
+</html>
