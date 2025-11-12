@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+:root {
+  --primary: #00c6be;
+  --contentsBg: #f8f8f8;
+  --start: #231f20;
+  --line: #eeeeee;
+  --icon: #444444;
+  --warning: #fc3b75;
+
+  --contentPrimary: #231f20;
+  --contentSecondary: #959595;
+  --contentTertiary: #bbbbbb;
+
+  --detailsTitle: #333333;
+  --detailsSubtitle: #666666;
+  --detailsContent: #1b1b1b;
+  --detailsSecondary: #838383;
+
+  --loginContent: #8e8e8e;
+  --loginLine: #d7d7d7;
+  --loginButton: #aaaaaa;
+  /* font*/
+  --base-font-family: 'Pretendard Variable', sans-serif;
+}
+
+@theme {
+  /* theme */
+  --color-br-primary: var(--primary);
+  --color-br-contentsBg: var(--contentsBg);
+  --color-br-start: var(--start);
+  --color-br-line: var(--line);
+  --color-br-icon: var(--icon);
+  --color-br-warning: var(--warning);
+
+  --color-br-contentPrimary: var(--contentPrimary);
+  --color-br-contentSecondary: var(--contentSecondary);
+  --color-br-contentTertiary: var(--contentTertiary);
+
+  --color-br-detailsTitle: var(--detailsTitle);
+  --color-br-detailsSubtitle: var(--detailsSubtitle);
+  --color-br-detailsContent: var(--detailsContent);
+  --color-br-detailsSecondary: var(--detailsSecondary);
+
+  --color-br-loginContent: var(--loginContent);
+  --color-br-loginLine: var(--loginLine);
+  --color-br-loginButton: var(--loginButton);
+
+  --font-Pretendard: 'Pretendard Variable', sans-serif;
+}
