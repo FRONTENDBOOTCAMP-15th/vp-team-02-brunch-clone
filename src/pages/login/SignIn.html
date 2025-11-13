@@ -10,7 +10,7 @@
   <body>
     <h1 class="sr-only">로그인 페이지</h1>
     <div>
-      <svg width="220" height="130" viewBox="0 0 220 130" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <svg aria-hidden="true" width="220" height="130" viewBox="0 0 220 130" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="220" height="130" fill="url(#pattern0_14_707)" />
         <defs>
           <pattern id="pattern0_14_707" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -26,25 +26,26 @@
         </defs>
       </svg>
       <p>브런치 작가로 데뷔하세요.</p>
-      <span>진솔한 에세이부터 업계 전문 지식까지,<br />당신의 이야기를 세상에 선보이세요.</span>
+      <p>진솔한 에세이부터 업계 전문 지식까지,</p>
+      <p>당신의 이야기를 세상에 선보이세요.</p>
     </div>
 
     <form id="login-form">
       <!-- 이메일 입력 -->
       <div class="login-email">
-        <label for="signin-email" class="sr-only">레이블</label>
-        <input type="email" id="signin-email" name="login" required placeholder="이메일" class="w-80 h-[43px] border-b border-br-loginLine placeholder:text-sm focus:outline-none focus:border-br-primary" />
+        <label for="signin-email" class="sr-only">이메일 입력</label>
+        <input type="email" id="signin-email" name="email" required placeholder="이메일" class="w-80 h-[43px] border-b border-br-loginLine placeholder:text-sm focus:outline-none focus:border-br-primary" />
       </div>
       <!-- 패스워드 입력 -->
       <div class="login-pwd-input">
-        <label for="signin-pwd" class="sr-only">레이블</label>
+        <label for="signin-pwd" class="sr-only">비밀번호 입력</label>
         <input type="password" id="signin-pwd" name="password" required placeholder="비밀번호" class="w-80 h-[43px] border-b border-br-loginLine placeholder:text-sm focus:outline-none focus:border-br-primary" />
       </div>
       <!-- 로그인 정보 저장 체크박스 -->
       <div class="singin-checkbox-icon">
         <input type="checkbox" id="signin-checkbox-1" name="login-save-checkbox" />
         <label for="signin-checkbox-1">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="20" height="20" rx="10" fill="#DDDDDD" />
             <path d="M15.6663 6.3335L8.99967 14.0002L4.33301 9.00016" stroke="white" />
           </svg>
