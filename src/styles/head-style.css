@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+  .MainLogo .FootMenu .Nav .BrunchSection .AuthorSection .AuthorCardContainer {
+    flex: 0 0 120px; /* 너무 커지지 않게 */
+  }
+}
+
 .Header {
   display: flex;
   align-items: center;
@@ -52,12 +58,6 @@
 .StartBtn:hover {
 }
 
-@media (max-width: 600px) {
-  .MainLogo {
-    flex: 0 0 120px; /* 너무 커지지 않게 */
-  }
-}
-
 .NotifyIcon {
 }
 .Avarta {
@@ -81,4 +81,332 @@
     height: 100%;
     border-radius: 50%;
   }
+}
+
+/* nav row */
+.Nav {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  background: transparent;
+  padding: 8px 0;
+}
+
+.NavItem {
+  flex: 1 1 0;
+  text-align: center;
+  padding: 8px 6px;
+  color: var(--icon);
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+}
+
+.NavItem .Icon {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NavItem svg {
+  width: 22px;
+  height: 22px;
+  opacity: 0.95;
+}
+
+.NavItem .Label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 86px;
+  color: #68707a;
+  font-weight: 500;
+}
+
+/* 홈 아이콘 강조 (예: 선택된 항목) */
+.NavItem.active svg {
+  filter: none;
+  opacity: 1;
+}
+.NavItem.active .Label {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* 요즘 뜨는 브런치북 */
+
+.BrunchSection {
+  /*
+  max-width: 650px;
+  margin: auto;
+  */
+  padding: 20px;
+}
+
+.Subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.Title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.BookList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.BookItem {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+  gap: 20px;
+}
+
+.BookRank {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+  width: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.BookRank .new {
+  font-size: 12px;
+  color: #ff0077;
+  font-weight: 600;
+}
+
+.BookInfo {
+  flex: 1;
+}
+
+.BookTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+.BookAuthor {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.BookDesc {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 181px;
+}
+
+.BookCover {
+  width: 80px;
+  height: 112px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.BookCover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지 비율을 유지하며 영역을 꽉 채우도록 설정 */
+  display: block;
+}
+
+.Divider {
+  height: 1px;
+  background-color: #eee;
+  margin-top: 10px;
+}
+/* 구독자(Top) 급등 작가 */
+
+.SectionTitle {
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.AuthorGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.AuthorCard {
+  text-align: center;
+  padding: 30px 20px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.AuthorImg {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.AuthorName {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 5px 0 3px 0;
+}
+
+.AuthorRole {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.AuthorDesc {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.4;
+  max-width: 200px;
+  margin: 0 auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* 오늘의 작가 */
+.AuthorCardContainer {
+  /* width: 400px;  */
+  /* 이미지에 맞게 너비 조정 */
+  padding: 20px;
+  background-color: white;
+}
+
+/* --- 작가 헤더 및 프로필 섹션 --- */
+.AuthorHeader {
+  margin-bottom: 25px;
+}
+
+.TodayAuthor {
+  color: #00c192; /* 브런치 포인트 컬러와 유사하게 설정 */
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.ProfileInfoWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3px;
+}
+
+.AuthorName {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.2;
+}
+
+.AuthorPhoto {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 20px; /* 이름과 사진 사이 간격 */
+}
+
+.AuthorJob {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.AuthorBio {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* --- 작품 리스트 섹션 --- */
+.WorkList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* 작품 항목 사이의 간격 */
+}
+
+.WorkItem {
+  display: flex;
+  padding: 15px 0; /* 항목 내부 패딩 */
+  border-bottom: 1px solid #eee; /* 구분선 */
+  cursor: pointer;
+}
+
+.WorkItem:last-child {
+  border-bottom: none; /* 마지막 항목은 구분선 제거 */
+}
+
+.WorkCoverWrap {
+  position: relative;
+  flex-shrink: 0; /* 커버 이미지가 축소되지 않도록 설정 */
+  width: 80px; /* 이미지 너비 */
+  height: 110px; /* 이미지 높이 */
+  margin-right: 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.WorkCover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 최신작 뱃지 스타일 */
+.Badge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  background-color: #333; /* 어두운 배경색 */
+}
+
+.WorkDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.WorkTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.WorkDescription {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
 }
