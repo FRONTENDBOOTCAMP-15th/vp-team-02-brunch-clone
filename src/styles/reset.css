@@ -79,7 +79,6 @@ time,
 mark,
 audio,
 video {
-  border: 0;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
