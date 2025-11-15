@@ -69,13 +69,13 @@ class NavigateComponent extends HTMLElement {
     <input type="checkbox" class="sr-only peer" />
      <!-- 기본 아이콘 (체크 전) -->
     <img
-      src="../../public/Home.svg"
+      src="../../src/assets/icon/Home.svg"
       alt="검색 아이콘 기본"
       class="peer-checked:hidden"
     />
           <!-- 체크 아이콘 (체크 후) -->
     <img
-       src="../../public/HomeActive.svg"
+       src="../../src/assets/icon/HomeActive.svg"
       alt="검색 아이콘 채움"
       class="hidden peer-checked:block"
     />
@@ -90,13 +90,13 @@ class NavigateComponent extends HTMLElement {
     <input type="checkbox" class="sr-only peer" />
       <!-- 기본 아이콘 (체크 전) -->
     <img
-      src="../../public/Search.svg"
+      src="../../src/assets/icon/Search.svg"
       alt="발견 아이콘 기본"
       class="peer-checked:hidden"
     />
             <!-- 체크 아이콘 (체크 후) -->
     <img
-       src="../../public/SearchActive.svg"
+       src="../../src/assets/icon/SearchActive.svg"
       alt="발견 아이콘 채움"
       class="hidden peer-checked:block"
     />
@@ -111,13 +111,13 @@ class NavigateComponent extends HTMLElement {
     <input type="checkbox" class="sr-only peer" />
     <!-- 기본 아이콘 (체크 전) -->
     <img
-      src="../../public/EditSquare.svg"
+      src="../../src/assets/icon/EditSquare.svg"
       alt="글쓰기 아이콘 기본"
       class="peer-checked:hidden"
     />
             <!-- 체크 아이콘 (체크 후) -->
     <img
-       src="../../public/EditSquare.svg"
+       src="../../src/assets/icon/EditSquareActive.svg"
       alt="글쓰기 아이콘 채움"
       class="hidden peer-checked:block"
     />
@@ -132,13 +132,13 @@ class NavigateComponent extends HTMLElement {
     <input type="checkbox" class="sr-only peer" />
       <!-- 기본 아이콘 (체크 전) -->
     <img
-      src="../../public/inventory.svg"
+      src="../../src/assets/icon/inventory.svg"
       alt="내서랍 아이콘 기본"
       class="peer-checked:hidden"
     />
             <!-- 체크 아이콘 (체크 후) -->
     <img
-       src="../../public/inventoryActive.svg"
+       src="../../src/assets/icon/inventoryActive.svg"
       alt="내서랍 아이콘 채움"
       class="hidden peer-checked:block"
     />
